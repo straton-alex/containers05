@@ -90,7 +90,7 @@ cd containers05
     ![](images/Screenshot-2025-03-12-082231.png)  
 
 
-4. Copiați din container fișierele de configurare `apache2`, `php`, mariadb în directorul `files/` de pe computer. 
+5. Copiați din container fișierele de configurare `apache2`, `php`, mariadb în directorul `files/` de pe computer. 
 
     > Pentru a face acest lucru, în contextul proiectului, executați comenzile:
     ```bash
@@ -365,7 +365,7 @@ cd containers05
     COPY files/wp-config.php /var/www/html/wordpress/wp-config.php
     ```
     ![](images/Screenshot-2025-03-1-085652.png)
-
+--- 
 
 ### 7. Pornirea și Testarea
 - Recreați imaginea containerului cu numele `apache2-php-mariadb` și porniți containerul `apache2-php-mariadb` din `imaginea apache2-php-mariadb.` 
@@ -402,7 +402,7 @@ cd containers05
     ![](images/Screenshot-2025-03-12-091434.png)
     - Dashboard-ul unde putem configura site-ul.
     ![](images/Screenshot-2025-03-12-091506.png)
-
+--- 
 
 ### 8. Publicarea codului pe GitHub
 
@@ -504,6 +504,7 @@ Dacă acest parametru este prea mic, încărcările mari de fișiere sau formula
 
 Containerul funcționează, dar poate fi îmbunătățit prin optimizare, securizare și separarea serviciilor.
 
+--- 
 ### 10. Concluzie
 
 În această lucrare, am construit un container `Docker` care găzduiește un site `WordPress` folosind `Apache`, `PHP` și `MariaDB`. Am configurat fișierele necesare pentru `Apache`, `PHP` și `MariaDB` și am instalat `WordPress`. Am ajustat setările de memorie, dimensiunea fișierelor încărcate și logarea erorilor, iar cu ajutorul `supervisor` am asigurat rularea serviciilor în fundal. La final, site-ul `WordPress` a fost disponibil și funcțional. Această lucrare a oferit o înțelegere practică a utilizării `Docker` pentru a configura un mediu de dezvoltare complet pentru aplicațiile web.
